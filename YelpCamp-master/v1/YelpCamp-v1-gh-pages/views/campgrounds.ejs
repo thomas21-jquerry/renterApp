@@ -1,0 +1,36 @@
+<%- include("partials/header"); -%>
+
+<div class="container">
+    <header  style = "background:silver" class="jumbotron">
+        <div class = "container">
+			<center>
+            	<h1>Welcome to Lender!</h1>
+            	<p>The best sites for the lender and ledee to interact</p>
+            	<p>
+                	<a class="btn btn-dark btn-large" href="/campgrounds/new">Click to add an item u want to rent for some quick money</a>
+            	</p>
+			</center>	
+        </div>
+    </header>
+    
+    <div class="row" style="display:flex; flex-wrap:wrap;"">
+        <% campgrounds.forEach(function(campground){ %>
+													   		
+            	<div class="col md-3 col sm-6">
+					<div class="card" style="width: 18rem;">
+  						<img src="<%=campground.image %>" class="card-img-top" alt="...">
+  						<div class="card-body">
+    						<h5 class="card-title"><%=campground.name %></h5>
+    						<a href= `campgrounds/itempage/<%=campground.id%>`>View full</a>
+  						</div>
+					</div>
+            	   
+					
+            	</div>
+        <% }); %> 
+    </div> 
+   
+</div>
+<center>
+			<%- include("partials/footer"); -%>									  
+</center>

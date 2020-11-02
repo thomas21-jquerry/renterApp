@@ -1,0 +1,40 @@
+<%- include("partials/header"); -%>
+
+<div class="container">
+	 <div class="row" style="display:flex; flex-wrap:wrap;"">
+													   		
+            	<div class="col md-3 col sm-6" style= "padding:100px">
+            	    <div class="thumbnail" >
+						<center>
+            	            <img src="<%=campgroundz.image %>">
+						</center>  
+            	    </div>
+            	    <div class="caption" >
+						<center>
+            	            <h3><%= campgroundz.name %></h3>
+						</center>
+            	    </div>
+					<div>
+						<center>
+							<p>
+								<%= campgroundz.desc %>
+							</p>
+						</center>
+					</div>
+					<div>
+						<center>
+							<h4>
+								price = 
+								<%=campgroundz.price %>
+										rs
+							</h4>
+							<button type="button" class="btn btn-success btn-lg">Rent</button>
+						</center>	
+					</div>	
+            	</div>
+    </div> 
+</div>	
+
+<center>
+	<%- include("partials/footer"); -%>	
+</center>
