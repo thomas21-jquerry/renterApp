@@ -1,1 +1,5 @@
-The app file is index.js which can be found in "YelpCamp-master/v1/YelpCamp-v1-gh-pages/index.js"
+# YelpCamp
+This is a website for renting camping sites camping sites 
+
+### Tools Used
+Node.js, Express, MongoDB
